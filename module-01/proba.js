@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 // let a = 10;
 // let b = 25;8
@@ -16,3 +16,23 @@
 // let result = `Здравствуйте, меня зовут ${name}, мне ${number} лет, мне нравится ${subject}`;
 // console.log(result);
 
+// Задача 1
+// const name = prompt("Какое официальное название JavaScript");
+
+// if (name === "ECMAScript") {
+//   console.log("Верно");
+// } else {
+//   console.log("Не знаете ? ECMAScript!");
+// }
+
+// // Задача 2
+// Записать в тернарном виде
+
+// if (a + b < 4) {
+//   result = "Мало";
+// } else {
+//   result = "Много";
+// }
+
+// Задача 3
+// Напишите условие if для проверки, что переменная age находится в диапазоне между 14 и 90 включительно.
