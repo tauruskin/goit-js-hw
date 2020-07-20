@@ -108,7 +108,14 @@
 // Задание 5
 
 // const checkForSpam = function (message) {
-//   // твой код
+//   if (
+//     message.toLowerCase().includes("sale") ||
+//     message.toLowerCase().includes("spam")
+//   ) {
+//     return true;
+//   } else {
+//     return false;
+//   }
 // };
 
 // /*
