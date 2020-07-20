@@ -8,9 +8,11 @@
 // logItems(["Mango", "Poly", "Ajax", "Lux", "Jay", "Kong"]);
 // logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
 
-// __________________________________________
+// \\--------------------------------
+// \\
+// \\
 
-// Задание 2
+// Задание 2 \\
 
 // const calculateEngravingPrice = function (message, pricePerWord) {
 
@@ -39,21 +41,23 @@
 //   calculateEngravingPrice("Donec orci lectus aliquam est magnis", 20)
 // ); // 120
 
-// __________________________________________
+// \\--------------------------------
+// \\
+// \\
 
-// // Задание 3
+// Задание 3 \\
 
 // const findLongestWord = function (string) {
-//   let a = 0;
-//   let b = 0;
-//   const arrayLine = string.split(" ");
-//   for (let i = 0; i < arrayLine.length; i++) {
-//     if (a < arrayLine[i].length) {
-//       a = arrayLine[i].length;
-//       b = i;
+//   const stringArray = string.split(" ");
+//   let longestWord = stringArray[0];
+
+//   for (let i = 1; i < stringArray.length; i += 1) {
+//     if (stringArray[i].length > longestWord.length) {
+//       longestWord = stringArray[i];
 //     }
 //   }
-//   return arrayLine[b];
+
+//   return longestWord;
 // };
 
 // /*
@@ -65,18 +69,89 @@
 
 // console.log(findLongestWord("May the force be with you")); // 'force'
 
-// __________________________________________
+// \\--------------------------------
+// \\
+// \\
 
-// Задание 4
+// Задание 4 \\
 
-// __________________________________________
+// const formatString = function (string) {
+//   if (string.length <= 40) {
+//     return string;
+//   }
+//   const newString = string.split("").slice(0, 40).join("") + "...";
+//   return newString;
+// };
+// /*
+//  * Вызовы функции для проверки работоспособности твоей реализации.
+//  */
+// console.log(formatString("Curabitur ligula sapien, tincidunt non."));
+// // вернется оригинальная строка
+
+// console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."));
+// // вернется форматированная строка
+
+// console.log(formatString("Curabitur ligula sapien."));
+// // вернется оригинальная строка
+
+// console.log(
+//   formatString(
+//     "Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."
+//   )
+// );
+// // вернется форматированная строка
+
+// \\--------------------------------
+// \\
+// \\
 
 // Задание 5
 
-// __________________________________________
+// const checkForSpam = function (message) {
+//   // твой код
+// };
+
+// /*
+//  * Вызовы функции для проверки работоспособности твоей реализации.
+//  */
+// console.log(checkForSpam("Latest technology news")); // false
+
+// console.log(checkForSpam("JavaScript weekly newsletter")); // false
+
+// console.log(checkForSpam("Get best sale offers now!")); // true
+
+// console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
+
+// \\--------------------------------
+// \\
+// \\
 
 // Задание 6
 
-// __________________________________________
+// \\--------------------------------
+// \\
+// \\
 
 // Задание 7
+
+// const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
+
+// const isLoginValid = function (login) {
+//   // твой код
+// };
+
+// const isLoginUnique = function (allLogins, login) {
+//   // твой код
+// };
+
+// const addLogin = function (allLogins, login) {
+//   // твой код
+// };
+
+// /*
+//  * Вызовы функции для проверки работоспособности твоей реализации.
+//  */
+// console.log(addLogin(logins, 'Ajax')); // 'Логин успешно добавлен!'
+// console.log(addLogin(logins, 'robotGoogles')); // 'Такой логин уже используется!'
+// console.log(addLogin(logins, 'Zod')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
+// console.log(addLogin(logins, 'jqueryisextremelyfast')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
