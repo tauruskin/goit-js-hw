@@ -40,23 +40,21 @@
 // let totalPrice;
 
 // const droidCount = prompt("Колличество дроидов:");
-// console.log(droidCount);
 
 // if (droidCount === null) {
 //   console.log("Отменено пользователем!");
-// } else if (droidCount === String) {
+// } else {
+//   totalPrice = pricePerDroid * droidCount;
 //   console.log(droidCount);
 // }
-
-// console.log((totalPrice = pricePerDroid * droidCount));
-
-// let ammount = credits - totalPrice;
 
 // if (totalPrice > credits) {
 //   console.log("Недостаточно средств на счету!");
 // } else {
+//   credits -= totalPrice;
 //   console.log(
-//     `Вы купили ${droidCount} дроидов, на счету осталось ${ammount} кредитов.`);
+//     `Вы купили ${droidCount} дроидов, на счету осталось ${credits} кредитов.`
+//   );
 // }
 
 // Task 5

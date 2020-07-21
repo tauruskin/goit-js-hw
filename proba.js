@@ -33,3 +33,73 @@
 // Задача_______________________________________________
 
 // let arr = [5, 2, 1, -10, 8];
+
+// ---------------------------------------
+// Камень, ножницы, бумага
+// ---------------------------------------
+
+// let userChoice = prompt("Камень, ножницы или бумага?");
+
+// let computerChoice = Math.random();
+
+// if (computerChoice < 0.34) {
+//   computerChoice = "камень";
+// } else if (computerChoice <= 0.67) {
+//   computerChoice = "бумага";
+// } else {
+//   computerChoice = "ножницы";
+// }
+// console.log("Computer " + computerChoice);
+
+// const choice1 = userChoice;
+
+// const choice2 = computerChoice;
+
+// const compare = function (choice1, choice2) {
+//   if (choice1 === choice2) {
+//     return "Ничья!";
+//   } else if (choice1 === "камень") {
+//     if (choice2 === "ножницы") {
+//       return "Камень победил";
+//     } else {
+//       return "бумага победила";
+//     }
+//   } else if (choice1 === "бумага") {
+//     if (choice2 === "камень") {
+//       return "Бумага победила";
+//     } else {
+//       return "ножницы победили";
+//     }
+//   } else if (choice1 === "ножницы") {
+//     if (choice2 === "бумага") {
+//       return "Ножницы победили";
+//     } else {
+//       return "Камень победил";
+//     }
+//   }
+// };
+
+// console.log(compare(choice1, choice2));
+
+// function ask(question, yes, no) {
+//   confirm(question) ? yes() : no();
+// }
+
+// ask(
+//   "Вы согласны?",
+//   function () {
+//     alert("Вы согласились.");
+//   },
+//   function () {
+//     alert("Вы отменили выполнение.");
+//   }
+// );
+
+// Напишите функцию hello(), которая при вызове будет принимать переменную name(например, «Василий») и
+// выводить строку(в нашем случае «Привет, Василий»).В случае отсутствующего аргумента выводить «Привет, гость»
+
+// const hello = function (ask = "Василий") {
+//   console.log("Привет ", ask);
+// };
+
+// hello();

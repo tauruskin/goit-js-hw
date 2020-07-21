@@ -9,13 +9,10 @@
 // logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
 
 // \\--------------------------------
-// \\
-// \\
-
-// Задание 2 \\
+// Задание 2
+// \\--------------------------------
 
 // const calculateEngravingPrice = function (message, pricePerWord) {
-
 //   const arrayCount = message.split(" ");
 //   return arrayCount.length * pricePerWord;
 // };
@@ -42,10 +39,8 @@
 // ); // 120
 
 // \\--------------------------------
-// \\
-// \\
-
-// Задание 3 \\
+// Задание 3
+// \\--------------------------------
 
 // const findLongestWord = function (string) {
 //   const stringArray = string.split(" ");
@@ -70,10 +65,8 @@
 // console.log(findLongestWord("May the force be with you")); // 'force'
 
 // \\--------------------------------
-// \\
-// \\
-
-// Задание 4 \\
+// Задание 4
+// \\--------------------------------
 
 // const formatString = function (string) {
 //   if (string.length <= 40) {
@@ -102,10 +95,8 @@
 // // вернется форматированная строка
 
 // \\--------------------------------
-// \\
-// \\
-
 // Задание 5
+// \\--------------------------------
 
 // const checkForSpam = function (message) {
 //   if (
@@ -130,16 +121,30 @@
 // console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
 
 // \\--------------------------------
-// \\
-// \\
-
 // Задание 6
+// \\--------------------------------
+
+// let input;
+// const numbers = [];
+// let total = 0;
+
+// while ((input = prompt("Введите число:"))) {
+//   if (isNaN(input)) {
+//     alert("Было введено не число, попробуйте ещё раз");
+//     continue;
+//   }
+//   numbers.push(input);
+// }
+
+// for (const sum of numbers) {
+//   total += Number(sum);
+// }
+
+// console.log(`Общая сумма чисел равна ${total}`);
 
 // \\--------------------------------
-// \\
-// \\
-
-// Задание 7
+// Задание 7 \ не сделана
+// \\--------------------------------
 
 // const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 
