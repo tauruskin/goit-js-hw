@@ -103,3 +103,44 @@
 // };
 
 // hello();
+
+// const key = "person";
+// const getKey = function () {
+//   return "age";
+// };
+// const object = {
+//   [key]: "Mango",
+//   [getKey()]: 2,
+// };
+
+// console.log(object);
+
+// const houses = ["Arryn", "Frey", "Greyjoy", "Stark", "Lannister", "Tyrell"];
+
+// // Вертикальная запись удобнее для чтения
+// const updatedHouses = [
+//   ...houses.slice(0, 1),
+//   "Frey of the Crossing",
+//   ...houses.slice(2),
+// ];
+
+// console.log(updatedHouses);
+// // ['Arryn', 'Frey of the Crossing', 'Greyjoy', 'Stark', 'Lannister', 'Tyrell']
+
+// const a = { x: 1, y: 2 };
+// const b = { x: 10, z: 3 };
+
+// const c = { x: 5, j: 10, z: 15, ...b, ...a };
+
+// console.log(c); // {x: 1, j: 10, y: 2, z: 3}
+
+// const hotel = {
+//   name: "Resort Hotel",
+//   stars: 5,
+//   capacity: 100,
+// };
+
+// // Объявим переменные и присвоим им значения из объекта
+// const { name, stars, status } = hotel;
+
+// console.log(name, stars, status); // "Resort Hotel", 5, undefined
