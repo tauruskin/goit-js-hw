@@ -1,2 +1,2 @@
-# goit-js-hw-01
+# goit-js-hw
 Homework-01/JavaScript
