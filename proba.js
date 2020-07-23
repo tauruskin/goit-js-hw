@@ -299,3 +299,28 @@
 // alert(calculator.sum());
 // alert(calculator.mul());
 // console.log(calculator);
+
+// const bar = function () {
+//   console.log("bar");
+// };
+
+// const baz = function () {
+//   console.log("baz");
+// };
+
+// const foo = function () {
+//   console.log("foo");
+//   bar();
+//   baz();
+// };
+
+// foo();
+
+// const petya = {
+//   name: "Petya",
+//   showName() {
+//     console.log(this.name);
+//   },
+// };
+
+// petya.showName();
