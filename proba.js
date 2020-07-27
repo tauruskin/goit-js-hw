@@ -329,3 +329,99 @@
 // Напишите ф-цию, которая примает аргументами 2 числа,  задающих диапазон который нужно вывести в консоль
 // если в числе есть 3 - в консоль вместо него выводиться "three"
 // (то есть вместо 3, 13, 23 и т.д. должно быть "three")
+
+// const Hero = function (name, xp) {
+//   this.name = name;
+//   this.xp = xp;
+// };
+
+// Hero.prototype.gainXp = function (amount) {
+//   console.log(`${this.name} gained ${amount} experience points`);
+//   this.xp += amount;
+// };
+
+// const Warrior = function (name, xp, weapon) {
+//   Hero.call(this, name, xp);
+
+//   this.weapon = weapon;
+// };
+
+// Warrior.prototype = Object.create(Hero.prototype);
+// Warrior.prototype.constructor = Warrior;
+
+// Warrior.prototype.attack = function () {
+//   console.log(`${this.name} attacks with ${this.weapon}`);
+// };
+
+// const poly = new Warrior("Poly", 200, "sword");
+// *
+// *
+// *
+// *
+
+// *
+// *
+// const ShowMeTheHotel = function (name, capacity, stars) {
+//     this.name = name;
+//     this.capacity = capacity;
+//     this.stars = stars;
+//     this.greet = function() {
+//         console.log(`Hello at ${this.name}`)
+//     }
+//     this.order = function(n) {
+// if(n<this.capacity) {
+//     this.capacity -= n;
+//     console.log(`you booked ${n} apartments at ${this.name}`)
+
+// } else( console.log('we have no appartments for you'));
+//     }
+// }
+
+// let Hayyat = new ShowMeTheHotel('Hayat', 500, 5);
+// let Hilton = new ShowMeTheHotel('Hilton', 200, 5)
+
+// Hayyat.greet();
+// Hayyat.order(1);
+// Hayyat.order(50);
+
+// Hilton.greet();
+// Hilton.order(10);
+
+// console.log(Hayyat)
+
+// *
+// *
+// записать в статистику что продано и показать что купили
+
+// const storeStatistics = {
+//   pants: 0,
+//   shoes: 0,
+//   jackets: 0,
+// };
+// const SellItems = function (type, color, size, quantity) {
+//   this.type = type;
+//   this.color = color;
+//   this.size = size;
+//   this.quantity = quantity;
+
+//   this.message = function () {
+//     console.log(
+//       `Вы заказали: ${this.type}, цвет ${this.color}, размер ${this.size}, в колличестве ${this.quantity}`
+//     );
+//   };
+//   this.counter = function () {
+//     if (this.type === "paants") {
+//       storeStatistics += this.quantity;
+//     } else if (this.type === "shoes") {
+//       storeStatistics += this.quantity;
+//     } else if (this.type === "jackets") {
+//       storeStatistics += this.quantity;
+//     } else {
+//       console.log("К сожалению, данного товара не существует");
+//     }
+//   };
+// };
+// let pants = new SellItems("pants", "black", "M", 3);
+// pants.message();
+// pants.counter();
+// console.log(storeStatistics);
