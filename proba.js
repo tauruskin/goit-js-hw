@@ -425,3 +425,26 @@
 // pants.message();
 // pants.counter();
 // console.log(storeStatistics);
+// *
+// *
+// *
+// const obj = {
+//   getWidth: function () {
+//     return this.width;
+//   },
+//   width: 5,
+// };
+// console.log(obj.getWidth());
+// *
+// *
+// const user = {
+//   name: "Sasha",
+//   age: "30",
+//   sayHi: function () {
+//     alert(`
+//       Hi, my name is ${this.name} and I'm ${this.age} years old!`);
+//   },
+// };
+// setTimeout(function () {
+//   user.sayHi();
+// }, 1000);
