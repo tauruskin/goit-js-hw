@@ -448,3 +448,292 @@
 // setTimeout(function () {
 //   user.sayHi();
 // }, 1000);
+//
+// --------------------------------------
+//
+// 1) Даны два массива: ['a', 'b', 'c'] и[1, 2, 3].Объедините их вместе.
+// 2) Дан массив['a', 'b', 'c'].Добавьте ему в конец элементы 1, 2, 3.
+// 3) Дан массив[1, 2, 3].Сделайте из него массив[3, 2, 1].
+// 4) Дан массив[1, 2, 3, 4, 5].С помощью метода slice запишите в новый элементы[1, 2, 3].
+// 5) Дан массив[1, 2, 3, 4, 5].С помощью метода splice преобразуйте массив в[1, 4, 5].
+// const a = [1, 2, 3, 4, 5];
+
+//
+// 1
+
+// const one = ["a", "b", "c"];
+// const two = [1, 2, 3];
+// console.log(one + "," + two);
+
+// // 2
+
+// one.push(1, 2, 3);
+// console.log(one);
+
+// // 3
+// two.reverse();
+// console.log(two);
+// // 4
+
+// const four = [1, 2, 3, 4, 5];
+// console.log(four.slice(0, 3));
+
+// //
+// // 5
+
+// four.splice(1, 2);
+// console.log(four);
+
+//
+// --------------------------------------------------------------
+// //
+// 1) Вибираємо випадкове число (від 0 до довжини масива);
+// 2) -) Записуємо в змінну строку з промта
+// -) Зробити строку масивом
+// -) Скопіювати масив в нову змінну
+// -) Реверсимо масив
+// -) З масивів робимо строки
+
+// const a = [1, 2, 3, 4, 5];
+// console.log(Math.random(a.length));
+//
+// function randomNum() {
+//   const a = [1, 2, 3, 4, 5];
+//   return Math.round;
+// }
+// console.log(randomNum);
+//1
+
+// let input = prompt("write smth");
+// console.log(input);
+
+// // 2
+
+// input = input.split("");
+// console.log(input);
+
+// // 3
+// let arr = input;
+// let newArr = [...input];
+
+// // 4
+
+// arr = arr.reverse();
+// newArr = newArr.reverse();
+// console.log(newArr);
+
+// //  5
+// arr = arr.join("");
+// newArr = newArr.join(",") + "," + input.reverse().join(",");
+// console.log(newArr);
+
+// -------------------------------------
+// "This is an example!" ==> "sihT si na !elpmaxe"
+// "double  spaces" ==> "elbuod  secaps"
+
+// function reverseWords(str) {
+//   str = str.split(" ");
+//   const res = [];
+
+//   for (let i = 0; i < str.length; i++) {
+//     res.push(str[i].split("").reverse().join(""));
+//   }
+//   return res.join(" ");
+// }
+// console.log(reverseWords("This is an example!"));
+// console.log(reverseWords("double  spaces"));
+// //
+
+// const reverseWords = (str) =>
+//   str
+//     .split(" ")
+//     .map((word) => word.split("").reverse().join(""))
+//     .join(" ");
+
+// console.log(reverseWords("This is an example!"));
+//
+//
+// ---------------------------------------------------------------------------
+//----My own civilization
+//
+// let creaturesArr = [];
+// class Creature {
+//   constructor(type, planet, status, sex) {
+//     this.type = type;
+//     this.planet = planet;
+//     this.status = status;
+//     this.sex = sex;
+//   }
+//   get show() {
+//     return `This ${this.type} is from ${this.planet} and has ${this.status} status`;
+//   }
+//   set changePlanet(str) {
+//     this.planet = str;
+//     return this.planet;
+//   }
+//   static intro() {
+//     console.log("There is a billions types of creatures all around the world!");
+//   }
+//   static checkCreatures() {
+//     console.log(creaturesArr);
+//   }
+// }
+
+// class Human extends Creature {
+//   constructor(name, type, planet, status, sex, nationality) {
+//     super(type, planet, status, sex);
+//     this.name = name;
+//     this.nationality = nationality;
+//   }
+//   addToCreaturesList() {
+//     creaturesArr.push({
+//       name: this.name,
+//       planet: this.planet,
+//       nationlity: this.nationality,
+//     });
+//   }
+// }
+
+// let Adam = new Human(
+//   "Adam",
+//   "human",
+//   "Mars",
+//   "three-dimensional",
+//   "male",
+//   "Ukrainian"
+// );
+// Adam.addToCreaturesList();
+
+// let Eva = new Human(
+//   "Eva",
+//   "human",
+//   "Venus",
+//   "three-dimensional",
+//   "female",
+//   "Ukrainian"
+// );
+// Eva.addToCreaturesList();
+// Creature.checkCreatures();
+
+// class Alien extends Creature {
+//   constructor(
+//     name,
+//     type,
+//     planet,
+//     status,
+//     nationality,
+//     sex,
+//     numberOfEyes,
+//     color
+//   ) {
+//     super(type, planet, status, sex);
+//     this.name = name;
+//     this.nationality = nationality;
+//     this.numberOfEyes = numberOfEyes;
+//     this.color = color;
+//   }
+//   addToCreaturesList() {
+//     creaturesArr.push({
+//       name: this.name,
+//       planet: this.planet,
+//       numberOfEyes: this.numberOfEyes,
+//       color: this.color,
+//     });
+//   }
+// }
+
+// let Drako = new Alien(
+//   "Drako",
+//   "alien",
+//   "droidland",
+//   "three-dimensional",
+//   "droidlander",
+//   "neutral",
+//   "six",
+//   "green"
+// );
+// Drako.addToCreaturesList();
+// Creature.checkCreatures();
+//
+// ---------------------------------------------------------------------
+//
+//// Реализуйте класс Student (Студент), который будет наследовать от класса User.
+// Этот класс должен иметь следующие свойства:
+//  name (имя, наследуется от User), surname (фамилия, наследуется от User),
+//  year (год поступления в вуз).
+//  Класс должен иметь метод getFullName() (наследуется от User),
+// с помощью которого можно вывести одновременно имя и фамилию студента.
+// Также класс должен иметь метод getCourse(), который будет выводить текущий курс
+// студента(от 1 до 5).
+// Курс вычисляется так: нужно от текущего года отнять год поступления в вуз.
+// Текущий год получите самостоятельно.
+
+// const currentYear = new Date().getFullYear();
+
+// class User {
+//   constructor(name, surname) {
+//     this._name = name;
+//     this._surname = surname;
+//   }
+
+//   getFullName() {
+//     return `${this._name} ${this._surname}`;
+//   }
+// }
+
+// class Student extends User {
+//   constructor(name, surname, year) {
+//     super(name, surname);
+//     this._year = year;
+//   }
+//   getCourse() {
+//     return currentYear - this._year;
+//   }
+//   get name() {
+//     return this._name;
+//   }
+//   get surname() {
+//     return this._surname;
+//   }
+//   get year() {
+//     return this._year;
+//   }
+// }
+// let student = new Student("Иван", "Иванов", 2003);
+
+// console.log(student.name); //выведет 'Иван'
+// console.log(student.surname); //выведет 'Иванов'
+// console.log(student.getFullName()); //выведет 'Иван Иванов'
+// console.log(student.year); //выведет 2017console.log(worker.getCourse()); //выведет 3 - третий курс, так как текущий год 2020
+//
+//
+// _------------------------------------------------------
+// Выведите с помощью цикла столбец чисел от 1 до 100.
+//
+// function unusualFive() {
+//   return "sasha".length;
+// }
+// console.log("sasha".length );
+//
+// Выведите с помощью цикла столбец чисел от 100 до 1.
+//
+// for (let i = 1; i <= 100; i++) {
+//   console.log(i);
+// }
+
+// for (let i = 100; i >= 1; i--) {
+//   console.log(i);
+
+// ------------------------------------------------
+//
+//Напишем объект user, с свойством name, и методом sayHi()
+//
+// const user = {
+//   name: "Саша",
+//   sayHi: function () {
+//     console.log("Привет! Меня зовут " + this.name);
+//   },
+// };
+// user.sayHi();
+//
+//
