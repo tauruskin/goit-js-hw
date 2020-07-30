@@ -737,3 +737,191 @@
 // user.sayHi();
 //
 //
+// ------------------------------------------------------
+
+// class Guesser {
+//   constructor(number, lives) {
+//     this.number = number;
+//     this.lives = lives;
+//   }
+
+//   guess(n) {
+//     if (!this.lives) throw "No guesses left";
+//     if (n === this.number) return true;
+//     this.lives--;
+//     return false;
+//   }
+// }
+
+// ----------------------------------------------------------------
+
+// 1)Создать масив в котором запишется каждый элемент исходного масива *2;
+// const numbers = [1, 2, 3, 4, 5];
+// 2)Создать масив в котором поочерёдно перечисляется длина элементов исходного масиваж
+// var arr = ["Есть", "жизнь", "на", "Марсе"];
+// 3)Посчитайте все лайки пользователей
+// const tweets = [
+//        { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//        { id: "001", likes: 2, tags: ["html", "css"] },
+//        { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//        { id: "003", likes: 8, tags: ["css", "react"] },
+//        { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+//      ];
+// 4)Найдите все обьекты у которых есть тег 'js'(массив tweets);
+//
+// 5)Создайте функцию которая будет подсчитывать сумму всех переданных ей нечётных(!) аргументов;
+//
+// 6) Отсортируйте масив по возрасту юзеров;
+// let items = [
+//   { name: "Миша", age: 23 },
+//   { name: "Вася", age: 44 },
+//   { name: "Саша", age: 2 },
+//   { name: "Рома", age: 99 },
+//   { name: "Ашот", age: 19 }
+// ];
+//
+// 7) Замените каждый елемент массива на 0; (Метод fill)
+// let x = [1, 2, 3, "a", "b", "c"];
+//
+// 8) Проверьте есть ли хотя бы один элемент больше 30 ? Верните true / false
+// const arr = [10, 20, 30, 40];
+//
+// 9) Найдите короля района
+// let items = [
+//   { name: "Миша", age: 23, isTheKingOfNeighbourhood: false },
+//   { name: "Вася", age: 44, isTheKingOfNeighbourhood: false },
+//   { name: "Саша", age: 2, isTheKingOfNeighbourhood: false },
+//   { name: "Рома", age: 99, isTheKingOfNeighbourhood: false },
+//   { name: "Ашот", age: 19, isTheKingOfNeighbourhood: true }
+
+//
+//----------------------------------------------
+// 1
+//
+// const numbers = [1, 2, 3, 4, 5];
+// const result = numbers.map((elem) => {
+//   return elem * 2;
+// });
+// console.log(result);
+// console.log(numbers);
+// ________________________________
+//
+// 2
+//
+// const arr = ["Есть", "жизнь", "на", "Марсе"];
+// const arrLength = arr.map((item) => {
+//   return item.length;
+// });
+// console.log(arrLength); // 4,5,2,5
+//
+// 3
+//
+// const tweets = [
+//   { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//   { id: "001", likes: 2, tags: ["html", "css"] },
+//   { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//   { id: "003", likes: 8, tags: ["css", "react"] },
+//   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+// ];
+
+// const totalTweets = tweets.reduce((acc, elem) => acc + elem.likes, 0);
+
+// console.log(totalTweets);
+//
+// 4
+//
+// const arr = tweets.filter((elem) => elem.tags.includes("js"));
+// console.log(arr);
+//
+// 5)Создайте функцию которая будет подсчитывать сумму всех переданных ей нечётных(!) аргументов;
+//
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const sum = numbers.reduce((acc, elem) => acc + elem, 0);
+// console.log(sum);
+//
+// другой вариант--------------------------------------------------
+//
+// const fn = function (...arr) {
+//   console.log(arr);
+//   let sum = arr.reduce((acc, el) => {
+//     el % 2 !== 0 ? (acc += el) : "";
+//     return acc;
+//   }, 0);
+//   return sum;
+// };
+// console.log(fn(1, 2, 3, 4, 5));
+//
+//
+// 6) Отсортируйте масив по возрасту юзеров;
+//
+
+// let items = [
+//   { name: "Миша", age: 23 },
+//   { name: "Вася", age: 44 },
+//   { name: "Саша", age: 2 },
+//   { name: "Рома", age: 99 },
+//   { name: "Ашот", age: 19 },
+// ];
+// const sortByAge = () => {
+//   items.sort((a, b) => (a.age > b.age ? 1 : -1));
+// };
+// sortByAge(items);
+// console.log(items);
+//
+//
+// 7) Замените каждый елемент массива на 0; (Метод fill)
+//
+// let x = [1, 2, 3, "a", "b", "c"];
+// console.log(x.fill(0));
+
+//
+//
+// 8) Проверьте есть ли хотя бы один элемент больше 30 ? Верните true / false
+//
+// const arr = [10, 20, 30, 40];
+// console.log(arr.some((num) => num > 30));
+//
+// 9) Найдите короля района
+
+// let items = [
+//   { name: "Миша", age: 23, isTheKingOfNeighbourhood: false },
+//   { name: "Вася", age: 44, isTheKingOfNeighbourhood: false },
+//   { name: "Саша", age: 2, isTheKingOfNeighbourhood: false },
+//   { name: "Рома", age: 99, isTheKingOfNeighbourhood: false },
+//   { name: "Ашот", age: 19, isTheKingOfNeighbourhood: true },
+// ];
+// console.log(items.find((item) => item.isTheKingOfNeighbourhood));
+
+//
+//
+//
+// 10) Поменяйте статус юзера на "неактивен", если daysInactive больше 10;
+// const users = [
+//   { name: "Mango", daysInactive: 10, isActive: true },
+//   { name: "Poly", daysInactive: 5, isActive: true },
+//   { name: "Ajax", daysInactive: 12, isActive: true },
+// ];
+// //
+// users.forEach((user) => {
+//   if (user.daysInactive > 10) {
+//     user.isActive = false;
+//   }
+// });
+// console.log(users);
+
+// 11) Создайте ф - цию которая принимает строку и возвращает её записанную "Заборчиком"(ПрИвЕт)
+//
+// const camelC = (word) => {
+//   const newAr = [...word];
+//   const resultC = newAr.reduce((acc, char, index) => {
+//     if (index % 2 != 0) {
+//       acc += char.toLowerCase();
+//     } else {
+//       acc += char.toUpperCase();
+//     }
+//     return acc;
+//   }, "");
+//   return resultC;
+// };
+
+// console.log(camelC("Привет"));
