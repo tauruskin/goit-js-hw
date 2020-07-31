@@ -1,14 +1,13 @@
-import Default from "./products.js";
+import products from "./products.js";
 
 // *****************************************************
 // Задание 1
 // *****************************************************
 //
-
 // const getUserNames = (users) => {
 //   return users.map((user) => user.name);
 // };
-// console.log(getUserNames(Default));
+// console.log(getUserNames(products));
 
 // [
 //   "Moore Hensley",
@@ -29,7 +28,7 @@ import Default from "./products.js";
 // const getUsersWithEyeColor = (users, color) => {
 //   return users.filter((user) => user.eyeColor === color);
 // };
-// console.log(getUsersWithEyeColor(Default, "blue"));
+// console.log(getUsersWithEyeColor(products, "blue"));
 
 // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
 //
@@ -43,7 +42,7 @@ import Default from "./products.js";
 // const getUsersWithGender = (users, gender) => {
 //   return users.filter((user) => user.gender === gender);
 // };
-// console.log(getUsersWithGender(Default, "male")); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+// console.log(getUsersWithGender(products, "male")); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 //
 
 // *****************************************************
@@ -54,7 +53,7 @@ import Default from "./products.js";
 // const getInactiveUsers = (users) => {
 //   return users.filter((user) => !user.isActive);
 // };
-// console.log(getInactiveUsers(Default)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
+// console.log(getInactiveUsers(products)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
 //
 
 // *****************************************************
@@ -65,8 +64,8 @@ import Default from "./products.js";
 // const getUserWithEmail = (users, email) => {
 //   return users.find((user) => user.email === email);
 // };
-// console.log(getUserWithEmail(Default, "shereeanthony@kog.com")); // {объект пользователя Sheree Anthony}
-// console.log(getUserWithEmail(Default, "elmahead@omatom.com")); // {объект пользователя Elma Head}
+// console.log(getUserWithEmail(products, "shereeanthony@kog.com")); // {объект пользователя Sheree Anthony}
+// console.log(getUserWithEmail(products, "elmahead@omatom.com")); // {объект пользователя Elma Head}
 //
 
 // *****************************************************
@@ -77,8 +76,8 @@ import Default from "./products.js";
 // const getUsersWithAge = (users, min, max) => {
 //   return users.filter((user) => user.age >= min && user.age <= max);
 // };
-// console.log(getUsersWithAge(Default, 20, 30)); // [объект Ross Vazquez, объект Elma Head, объект Carey Barr]
-// console.log(getUsersWithAge(Default, 30, 40));
+// console.log(getUsersWithAge(products, 20, 30)); // [объект Ross Vazquez, объект Elma Head, объект Carey Barr]
+// console.log(getUsersWithAge(products, 30, 40));
 //
 // // [объект Moore Hensley, объект Sharlene Bush, объект Blackburn Dotson, объект Sheree Anthony]
 //
@@ -91,7 +90,7 @@ import Default from "./products.js";
 // const calculateTotalBalance = (users) => {
 //   return users.reduce((acc, user) => acc + user.balance, 0);
 // };
-// console.log(calculateTotalBalance(Default)); // 20916
+// console.log(calculateTotalBalance(products)); // 20916
 //
 
 // *****************************************************
@@ -102,8 +101,8 @@ import Default from "./products.js";
 // const getUsersWithFriend = (users, friendName) => {
 //   return users.filter((user) => user.friends.includes(friendName));
 // };
-// console.log(getUsersWithFriend(Default, "Briana Decker")); // [ 'Sharlene Bush', 'Sheree Anthony' ]
-// console.log(getUsersWithFriend(Default, "Goldie Gentry")); // [ 'Elma Head', 'Sheree Anthony' ]
+// console.log(getUsersWithFriend(products, "Briana Decker")); // [ 'Sharlene Bush', 'Sheree Anthony' ]
+// console.log(getUsersWithFriend(products, "Goldie Gentry")); // [ 'Elma Head', 'Sheree Anthony' ]
 //
 
 // *****************************************************
@@ -114,7 +113,7 @@ import Default from "./products.js";
 // const getNamesSortedByFriendsCount = (users) => {
 //   return users.sort((a, b) => a.friends.length - b.friends.length);
 // };
-// console.log(getNamesSortedByFriendsCount(Default));
+// console.log(getNamesSortedByFriendsCount(products));
 // // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
 //
 
@@ -129,6 +128,7 @@ import Default from "./products.js";
 //     .sort()
 //     .filter((skills, index, arr) => arr.indexOf(skills) === index);
 // };
-// console.log(getSortedUniqueSkills(Default));
+// console.log(getSortedUniqueSkills(products));
 
-// [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
+// // [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
+//

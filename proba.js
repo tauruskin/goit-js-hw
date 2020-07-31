@@ -925,3 +925,21 @@
 // };
 
 // console.log(camelC("Привет"));
+//
+// ------------------------------------------------
+// ------------------------------DOM-------------------------------------
+// ------------------------------------------------
+//
+// Создать красный круг
+//
+
+// let body = document.querySelector("body");
+// let box = document.createElement("div");
+// body.append(box);
+// console.log(box);
+// box.style.width = "60px";
+// box.style.height = "60px";
+// box.style.margin = "0 auto";
+// box.style.backgroundColor = "teal";
+// box.style.borderRadius = "50%";
+//
