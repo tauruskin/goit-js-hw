@@ -99,7 +99,11 @@ import products from "./products.js";
 //
 
 // const getUsersWithFriend = (users, friendName) => {
-//   return users.filter((user) => user.friends.includes(friendName));
+//   return users
+//     .map((user) =>
+//       user.friends.some((friend) => friend === friendName) ? user.name : " "
+//     )
+//     .filter((name) => name !== " ");
 // };
 // console.log(getUsersWithFriend(products, "Briana Decker")); // [ 'Sharlene Bush', 'Sheree Anthony' ]
 // console.log(getUsersWithFriend(products, "Goldie Gentry")); // [ 'Elma Head', 'Sheree Anthony' ]
@@ -113,14 +117,40 @@ import products from "./products.js";
 // const getNamesSortedByFriendsCount = (users) => {
 //   return users.sort((a, b) => a.friends.length - b.friends.length);
 // };
+
+// const getNamesSortedByFriendsCount = (users) => {
+//   let result = [...users];
+//   const arr = result
+//     .sort((a, b) => a.friends.length - b.friends.length)
+//     .map((elem) => {
+//       return elem.name;
+//     });
+//   return arr;
+// };
+
 // console.log(getNamesSortedByFriendsCount(products));
-// // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
-//
+// [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
 
 // *****************************************************
-// Задание 10 (Вроде как работает, но не уверен, что правильно записан код)
+// Задание 10
 // *****************************************************
 //
+// const getSortedUniqueSkills = (users) => {
+//   const result = users
+//     .reduce((allSkills, elem) => {
+//       elem.skills.forEach((item) => {
+//         !allSkills.includes(item) ? allSkills.push(item) : "";
+//       });
+//       return allSkills;
+//     }, [])
+//     .sort();
+
+//   return result;
+// };
+// console.log(getSortedUniqueSkills(products));
+
+//
+// ________________________________2 вариант_______________________________
 
 // const getSortedUniqueSkills = (users) => {
 //   return users

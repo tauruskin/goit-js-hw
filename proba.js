@@ -937,9 +937,19 @@
 // let box = document.createElement("div");
 // body.append(box);
 // console.log(box);
-// box.style.width = "60px";
-// box.style.height = "60px";
-// box.style.margin = "0 auto";
-// box.style.backgroundColor = "teal";
-// box.style.borderRadius = "50%";
-//
+// // box.style.width = "60px";
+// // box.style.height = "60px";
+// // box.style.margin = "0 auto";
+// // box.style.backgroundColor = "teal";
+// // box.style.borderRadius = "50%";
+// //
+// // box.setAttribute("class", "box");
+// for (let i = 0; i < 20; i++) {
+//   let smallBox = document.createElement("div");
+//   box.append(smallBox);
+//   smallBox.classList.add("smallBox");
+
+//   smallBox.style.backgroundColor = `rgb(${Math.round(
+//     Math.random() * 255
+//   )}, ${Math.round(Math.random() * 255)})`;
+// }
