@@ -147,10 +147,23 @@
 
 //
 // --------------------------------------------
-// Задание 8
+// Задание 8 (ще не зробив, колись дороблю:)) )
 // --------------------------------------------
 //
 
 // const collection = document.querySelector("#boxes");
 // const input = document.querySelector("#controls input");
-// const create
+// const createCollection = document.querySelector(`[data-action="render"]`);
+// const deleteCollection = document.querySelector(`[data-action="destroy"]`);
+
+// createCollection.addEventListener("click", createBoxes);
+// deleteCollection.addEventListener("click", clearCollection);
+
+// function createBoxes(amount) {
+//   clearCollection();
+// }
+
+// if (amount >= 1) {
+//   let boxArr = [];
+//   let box;
+// }
