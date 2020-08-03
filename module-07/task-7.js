@@ -129,7 +129,6 @@
 //     input.setAttribute("class", "valid");
 //   }
 // });
-//
 
 //
 // --------------------------------------------
@@ -152,6 +151,6 @@
 // --------------------------------------------
 //
 
-const collection = document.querySelector("#boxes");
-const input = document.querySelector("#controls input");
-const create
+// const collection = document.querySelector("#boxes");
+// const input = document.querySelector("#controls input");
+// const create
