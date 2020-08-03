@@ -953,3 +953,97 @@
 //     Math.random() * 255
 //   )}, ${Math.round(Math.random() * 255)})`;
 // }
+
+//
+// два квадратика с цифрами 1 и 2, поменять местами цифры
+// при нажатии меняются местами цифры
+//
+
+// const box = document.querySelector("body");
+
+// let a = "1";
+// let b = "2";
+
+// const first = document.createElement("p");
+// const second = document.createElement("p");
+
+// box.append(first);
+// box.append(second);
+
+// console.log(box);
+
+// first.classList.add("first-item");
+// second.classList.add("second-item");
+
+// box.style.display = "flex";
+
+// first.style.width = "40px";
+// first.style.height = "40px";
+// first.style.display = "flex";
+// first.textContent = a;
+// first.style.backgroundColor = "red";
+// first.style.marginRight = "10px";
+// first.style.alignItems = "center";
+// first.style.justifyContent = "center";
+
+// second.style.width = "40px";
+// second.style.height = "40px";
+// second.style.display = "flex";
+// second.textContent = a;
+// second.style.backgroundColor = "blue";
+// second.style.alignItems = "center";
+// second.style.justifyContent = "center";
+
+// first.addEventListener("click", () => {
+//   if (first.textContent === a) {
+//     first.textContent = b;
+//     second.textContent = a;
+//   } else {
+//     first.textContent = a;
+//     second.textContent = b;
+//   }
+// });
+
+// second.addEventListener("click", () => {
+//   if (second.textContent === b) {
+//     second.textContent = a;
+//     first.textContent = b;
+//   } else {
+//     second.textContent = b;
+//     first.textContent = a;
+//   }
+// });
+
+//
+// Сделайте текстовый инпут который принимает
+// значение цвета и меняет цвет бекграунда для body
+//
+//
+
+//
+// При нажатии на кнопку создаётся квадрат, при изменение
+// инпута(range) - меняется его размер(размер грани должен
+//   быть больше 100 пикселей)
+// При нажатии на вторую кнопку - квадрат удаляется
+//
+
+// window.addEventListener("scroll", () => console.log(window.pageYOffset));
+// window.onbeforeunload = function (e) {
+//   let dialogText = "Dialog text here";
+//   e.returnValue = dialogText;
+//   return dialogText;
+// };
+
+// Геолокация____________________________________
+// //
+// function success(pos) {
+//   let crd = pos.coords;
+
+//   console.log("Your current position is:");
+//   console.log(`Latitude : ${crd.latitude}`);
+//   console.log(`Longitude: ${crd.longitude}`);
+//   console.log(`More or less ${crd.accuracy} meters.`);
+// }
+
+// console.log(navigator.geolocation.getCurrentPosition(success));
+//
