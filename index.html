@@ -1,12 +1,36 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./module-07/style.css" />
-    <title>Home_task_1</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Homework 8</title>
+    <!-- <link rel="stylesheet" href="./module-07/style.css" /> -->
+    <link rel="stylesheet" href="./module-08/style.css" />
   </head>
   <body>
-    <h1>Home tasks JavaScript</h1>
+    <!-- В этот список добавляй элементы галереи -->
+    <ul class="gallery js-gallery"></ul>
+
+    <!--
+              Модальное окно для полноразмерного изображения
+              Для того чтобы открыть, необходимо добавить на div.lightbox CSS-класс is-open
+            -->
+    <div class="lightbox js-lightbox">
+      <div class="lightbox__overlay"></div>
+
+      <div class="lightbox__content">
+        <img class="lightbox__image" src="" alt="" />
+      </div>
+
+      <button
+        type="button"
+        class="lightbox__button"
+        data-action="close-lightbox"
+      ></button>
+    </div>
+
+    <!-- <h1>Home tasks JavaScript</h1>
     <ul id="categories">
       <li class="item">
         <h2>Животные</h2>
@@ -70,9 +94,7 @@
       <button type="button" data-action="destroy">Очистить</button>
     </div>
 
-    <div id="boxes"></div>
-
-    <script src="./proba.js" type="module"></script>
+    <div id="boxes"></div> -->
 
     <!-- <script src="./module-01/task.js" type="module"></script>
     <script src="./module-02/task-2.js" type="module"></script>
@@ -83,6 +105,8 @@
     <script src="./module-06/task-6.js" type="module"></script>
     <script src="./module-06/products.js" type="module"></script> -->
 
-    <script src="./module-07/task-7.js" type="module"></script>
+    <!-- <script src="./module-07/task-7.js" type="module"></script> -->
+
+    <script src="./module-08/task-8.js" type="module"></script>
   </body>
 </html>

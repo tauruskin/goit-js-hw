@@ -89,6 +89,7 @@
 
 // function increment() {
 //   counterValue.textContent = Number(counterValue.textContent) + 1;
+// // counterValue.textContent++
 // }
 // function decrement() {
 //   counterValue.textContent -= 1;

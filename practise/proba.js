@@ -982,6 +982,7 @@
 // first.style.display = "flex";
 // first.textContent = a;
 // first.style.backgroundColor = "red";
+// first.style.outline = "solid 1 px";
 // first.style.marginRight = "10px";
 // first.style.alignItems = "center";
 // first.style.justifyContent = "center";
@@ -1047,3 +1048,39 @@
 
 // console.log(navigator.geolocation.getCurrentPosition(success));
 //
+
+// Есть кнопка с классом button, текст которой отображает
+// кол - во раз которое по ней кликнули, обновляется при каждом клике.
+// * /
+
+// const count = 0;
+// function func() {
+//   let plusButton = document.getElementsByClassName("button_plus");
+//   let minusButton = document.getElementsByClassName("button_minus");
+
+//   if ((document.onclick = plusButton)) {
+//     count++;
+//     console.log(count);
+//   } else if ((document.onclick = minusButton)) {
+//     count--;
+//     console.log(count);
+//   }
+// }
+//
+// ---------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------
+/*
+  Дан список изображений. Сделайте так, чтобы по клику на картинку 
+  алертом выводился ее src. Обязательно используйте делегирование событий.
+*/
+
+// let gallery = document.querySelector(".gallery");
+// for (let i = 0; i < 5; i += 1) {
+//   gallery.innerHTML += `<li><img src="https://picsum.photos/id/${i}/200/300"></li>`;
+// }
+// gallery.addEventListener("click", (event) => {
+//   if (event.target.nodeName !== "IMG") {
+//     return;
+//   }
+//   alert(event.target.src);
+// });
