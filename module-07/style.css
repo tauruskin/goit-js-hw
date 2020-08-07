@@ -1,7 +1,7 @@
 #gallery {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0px;
 }
 

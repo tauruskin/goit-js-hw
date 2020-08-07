@@ -18,8 +18,8 @@ overlay.addEventListener("click", clickPastModal);
 
 function showModal(event) {
   event.preventDefault();
+
   window.addEventListener("keydown", escapeModal);
-  window.addEventListener("keydown", swipeImage);
 
   if (event.target !== event.currentTarget) {
     const { source } = event.target.dataset;
@@ -31,7 +31,6 @@ function showModal(event) {
 
 function closeModal() {
   window.removeEventListener("keydown", escapeModal);
-  window.removeEventListener("keydown", swipeImage);
 
   overlay.classList.remove("is-open");
   modalImage.src = undefined;
@@ -47,19 +46,5 @@ function clickPastModal(event) {
 function escapeModal(event) {
   if (event.code === "Escape") {
     closeModal();
-  }
-}
-
-function swipeImage(event) {
-  if (modalImage.src !== event.target.href) {
-    const currentImage = modalImage.src;
-    detectedIndex = galleryItems.findIndex(
-      (item) => item.original === currentImage
-    );
-  } else {
-    const imageToFind = event.target.href;
-    detectedIndex = galleryItems.findIndex(
-      (item) => item.original === imageToFind
-    );
   }
 }

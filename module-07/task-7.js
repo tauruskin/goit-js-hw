@@ -1,4 +1,5 @@
 // const categoriesRef = document.querySelector("#categories");
+
 // const liItemRefArray = categoriesRef.querySelectorAll(".item");
 
 // const categoriesQuantity = function (arr) {
@@ -44,7 +45,6 @@
 // --------------------------------------------
 // Задание 3
 // --------------------------------------------
-//
 
 // const images = [
 //   {
@@ -65,15 +65,15 @@
 // ];
 
 // const galleryRef = document.querySelector("#gallery");
-// const imagesArray = images
-//   .map((image) => {
-//     const li = `<li class="item-class"> <img src="${image.url}" alt="${image.alt}" width="250" height="250"></li>`;
-//     return li;
-//   })
-//   .join("");
+
+// const imagesArray = images.reduce((acc, image) => {
+//   return (acc += `<li class='item'>
+//   <img class='item_img' src = "${image.url}" alt = "${image.alt}" width="250" height="250">
+//   </li>`);
+// }, "");
+
 // galleryRef.insertAdjacentHTML("afterbegin", imagesArray);
 
-//
 // --------------------------------------------
 // Задание 4
 // --------------------------------------------
