@@ -1,5 +1,4 @@
 // const categoriesRef = document.querySelector("#categories");
-
 // const liItemRefArray = categoriesRef.querySelectorAll(".item");
 
 // const categoriesQuantity = function (arr) {
@@ -78,22 +77,19 @@
 // Задание 4
 // --------------------------------------------
 //
-
+// const decrementButton = document.querySelector(`[data-action="decrement"]`);
+// const incrementButton = document.querySelector(`[data-action="increment"]`);
 // const counterValue = document.querySelector("#value");
 
-// const incrementButton = document.querySelector(`[data-action="increment"]`);
-// const decrementButton = document.querySelector(`[data-action="decrement"]`);
-
-// incrementButton.addEventListener("click", increment);
-// decrementButton.addEventListener("click", decrement);
-
-// function increment() {
-//   counterValue.textContent = Number(counterValue.textContent) + 1;
-// // counterValue.textContent++
-// }
-// function decrement() {
-//   counterValue.textContent -= 1;
-// }
+// const value = (e) => {
+//   if (e.target.getAttribute("data-action") === "decrement") {
+//     counterValue.textContent--;
+//   } else {
+//     counterValue.textContent++;
+//   }
+// };
+// decrementButton.addEventListener("click", value);
+// incrementButton.addEventListener("click", value);
 
 //
 
@@ -105,14 +101,12 @@
 // const inputIn = document.querySelector("#name-input");
 // const inputOut = document.querySelector("#name-output");
 
-// inputIn.addEventListener("input", inputChangeOut);
-
-// function inputChangeOut(event) {
-//   inputOut.textContent = event.target.value;
+// inputIn.addEventListener("input", (e) => {
+//   inputOut.textContent = e.target.value;
 //   if (inputOut.textContent === "") {
 //     inputOut.textContent = "незнакомец";
 //   }
-// }
+// });
 //
 
 //
