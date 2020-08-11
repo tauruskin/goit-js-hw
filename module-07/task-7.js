@@ -1,21 +1,11 @@
-// const categoriesRef = document.querySelector("#categories");
-// const liItemRefArray = categoriesRef.querySelectorAll(".item");
+// const liItemRefArray = document.querySelectorAll(".item");
 
-// const categoriesQuantity = function (arr) {
-//   return console.log(`В списке ${arr.length} категории.`);
-// };
+// console.log(`В списке ${liItemRefArray.length} категории.`);
 
-// const categoriesInfo = function (arr) {
-//   return arr.forEach((item) =>
-//     console.log(
-//       `Категория: ${
-//         item.querySelector("h2").textContent
-//       } Количество элементов: ${item.querySelectorAll("li").length}`
-//     )
-//   );
-// };
-// categoriesQuantity(liItemRefArray);
-// categoriesInfo(liItemRefArray);
+// liItemRefArray.forEach((element) => {
+//   console.log(element.children[0].textContent);
+//   console.log(element.children[1].children.length);
+// });
 
 //
 // --------------------------------------------
@@ -79,19 +69,31 @@
 //
 // const decrementButton = document.querySelector(`[data-action="decrement"]`);
 // const incrementButton = document.querySelector(`[data-action="increment"]`);
-// const counterValue = document.querySelector("#value");
 
-// const value = (e) => {
-//   if (e.target.getAttribute("data-action") === "decrement") {
-//     counterValue.textContent--;
+// let counterValue = 0;
+
+// let value = document.getElementById("value");
+
+// function increment() {
+//   updateCurentValue("increment");
+//   updateNewValue();
+// }
+// function decrement() {
+//   updateCurentValue("decrement");
+//   updateNewValue();
+// }
+// const updateNewValue = () => {
+//   value.innerHTML = counterValue;
+// };
+// const updateCurentValue = (str) => {
+//   if (str === "increment") {
+//     counterValue++;
 //   } else {
-//     counterValue.textContent++;
+//     counterValue--;
 //   }
 // };
-// decrementButton.addEventListener("click", value);
-// incrementButton.addEventListener("click", value);
-
-//
+// decrementButton.addEventListener("click", decrement);
+// incrementButton.addEventListener("click", increment);
 
 //
 // --------------------------------------------

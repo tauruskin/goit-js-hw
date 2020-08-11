@@ -1084,3 +1084,31 @@
 //   }
 //   alert(event.target.src);
 // });
+
+// const date = new Date(2000, 5, 8, 12, 0, 0, 0);
+// console.log(`Время в мс с начала эпохи Unix: ${date.getTime()}`);
+
+// let result = "Date: ";
+// result += date.getFullYear() + "/"; // год
+// result += date.getMonth() + "/"; // месяц, начиная с 0
+// result += date.getDate() + ". Day of week: "; // день недели, начиная с 1
+// result += date.getDay() + "."; // день , начиная с 0
+
+// result += " Time: " + date.getHours() + ":"; // часы
+// result += date.getMinutes() + ":"; // минуты
+// result += date.getSeconds() + ":"; // секунды
+// result += date.getMilliseconds() + ""; // милисекунды
+
+// // строка должна показать текущее время и дату
+// console.log(result); // "Date: 2017/8/6. Day of week: 3. Time: 21:18:12:483"
+// // ...  значения будут меняться :-)
+
+//
+// const elem = document.getElementsByTagName("img");
+// for (let i = 0; i < elem.length; i++) {
+//   elem[i].onclick = func;
+// }
+
+// function func() {
+//   alert(this.getAttribute("src"));
+// }
