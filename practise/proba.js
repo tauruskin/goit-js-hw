@@ -1112,3 +1112,20 @@
 // function func() {
 //   alert(this.getAttribute("src"));
 // }
+//
+// Курс Валют
+//
+// let body = document.querySelector("body");
+
+// const getCurrency = function (str) {
+//   let promise = fetch(str);
+//   return promise;
+// };
+// getCurrency("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5")
+//   .then((data) => data.json())
+//   .then((data) =>
+//     data.forEach(
+//       (el) =>
+//         (body.innerHTML += `<div>${el.ccy} buy: ${el.buy}, sell: ${el.sale}</div>`)
+//     )
+//   );
